@@ -20,7 +20,7 @@ code {
 
 .navbar-hero {
   min-height: 100vh;
-  background-image: url('../public/profile.png'),linear-gradient(to right, rgb(20,32,35), rgb(43,50,55));   
+  background-image: url('../src/components/profile/profile.png'),linear-gradient(to right, rgb(20,32,35), rgb(43,50,55));   
   background-size: contain;
   background-repeat: no-repeat;
   color: white; 
