@@ -53,7 +53,7 @@ const About = () => {
         </p>
       </div>
       <div className="inline-flex items-center text-base font-semibold text-[#555555] dark:text-white">
-        26 August 2022
+        26 August 2001
       </div>
     </div>
   </li>
