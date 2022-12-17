@@ -12,7 +12,7 @@ const Contact = () => {
      </div>
      
      {/* <!-- Container for demo purpose --> */}
-<div class="container my-24 px-6 mx-auto">
+<div className="container my-24 px-6 mx-auto">
 
   {/* <!-- Section: Design Block --> */}
   <section className="mb-32 text-gray-800">
@@ -20,24 +20,24 @@ const Contact = () => {
     <div className="grow-0 shrink-0 basis-auto mb-6 md:mb-0 w-full md:w-6/12 px-3 lg:px-6">
       
       <p className="text-gray-500 mb-2">Phone</p>
-      <p className="text-gray-500 mb-2"><i class="fa-brands fa-whatsapp text-[#daa520] mr-3"></i>+ 250789456385</p>
+      <p className="text-gray-500 mb-2"><i className="fa-brands fa-whatsapp text-[#daa520] mr-3"></i>+ 250789456385</p>
 
       <p className="text-gray-500 mb-2">Email</p>
-      <p className="text-gray-500 mb-2"><i class="fa-regular fa-envelope text-[#daa520] mr-3"></i>patrickruboneza@gmail.com</p>
+      <p className="text-gray-500 mb-2"><i className="fa-regular fa-envelope text-[#daa520] mr-3"></i>patrickruboneza@gmail.com</p>
 
       <p className="text-gray-500 mb-2">Instagram</p>
-      <p className="text-gray-500 mb-2"><i class="fa-brands fa-instagram text-[#daa520] mr-3"></i> bonace.it</p>
+      <p className="text-gray-500 mb-2"><i className="fa-brands fa-instagram text-[#daa520] mr-3"></i> bonace.it</p>
 
       <p className="text-gray-500 mb-2">Linkedin</p>
-      <p className="text-gray-500 mb-2"><i class="fa-brands fa-linkedin-in text-[#daa520] mr-3"></i>bonace-patrick</p>
+      <p className="text-gray-500 mb-2"><i className="fa-brands fa-linkedin-in text-[#daa520] mr-3"></i>bonace-patrick</p>
 
 
       <p className="text-gray-500 mt-10">Social profiles</p>
       <div className="flex">
-      <i class="fa-brands fa-facebook text-[#daa520] text-2xl mt-3 mr-3"></i>
-      <i class="fa-brands fa-twitter text-[#daa520] text-2xl mt-3 mr-3"></i>
-      <i class="fa-brands fa-instagram text-[#daa520] text-2xl mt-3 mr-3"></i>
-      <i class="fa-brands fa-linkedin-in text-[#daa520] text-2xl mt-3"></i>
+      <i className="fa-brands fa-facebook text-[#daa520] text-2xl mt-3 mr-3"></i>
+      <i className="fa-brands fa-twitter text-[#daa520] text-2xl mt-3 mr-3"></i>
+      <i className="fa-brands fa-instagram text-[#daa520] text-2xl mt-3 mr-3"></i>
+      <i className="fa-brands fa-linkedin-in text-[#daa520] text-2xl mt-3"></i>
       </div>
      
    
@@ -54,7 +54,7 @@ const Contact = () => {
        <div className="flex flex-col lg:flex-row lg:mt-5">
 
        <div className="form-group mb-6 lg:mr-5 relative">
-       <i class="fa-solid fa-user text-[#cccccc] absolute top-4 left-5 "></i>
+       <i className="fa-solid fa-user text-[#cccccc] absolute top-4 left-5 "></i>
         <input type="text" className="form-control block
         w-full
         px-14
@@ -72,7 +72,7 @@ const Contact = () => {
         </div>
 
          <div className="form-group mb-6 relative">
-         <i class="fa-regular fa-envelope text-[#cccccc] absolute top-4 left-5"></i>
+         <i className="fa-regular fa-envelope text-[#cccccc] absolute top-4 left-5"></i>
           <input type="text" className="form-control block
         w-full
         px-14
@@ -92,7 +92,7 @@ const Contact = () => {
        </div>
        
         <div className="form-group mb-6 relative">
-        <i class="fa-solid fa-comments text-[#cccccc] absolute top-8 left-5 "></i>
+        <i className="fa-solid fa-comments text-[#cccccc] absolute top-8 left-5 "></i>
           <textarea className="
         form-control
         block
@@ -114,7 +114,8 @@ const Contact = () => {
       <div className="mx-auto">
 
         <button type="submit" className="
-      
+      btn
+      border-none
       px-9
       py-4
       bg-[#daa520]
@@ -130,7 +131,7 @@ const Contact = () => {
       active:bg-[#daa520] active:shadow-lg
       transition
       duration-150
-      ease-in-out"><i class="fa-solid fa-paper-plane text-lg mr-3"></i> SEND MESSAGE</button>
+      ease-in-out"><i className="fa-solid fa-paper-plane text-lg mr-3"></i> SEND MESSAGE</button>
        </div>
       </form>
     </div>
