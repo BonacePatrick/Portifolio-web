@@ -20,31 +20,36 @@ const NavHero = () => {
             </div>
         </div>
    </div>
-   <div className="navbar-hero ">
-    <div className=" flex flex-col justify-center items-center lg:pt-[10rem]">
-      <div className="greet">
+   <section className="navbar-hero bg-[#162124] min-h-screen ">
+    <div className=" flex  justify-between items-center">
+     
+      <div className='w-2/5 hidden lg:block'>
+        <img className='w-full' src="./assets/profile.png" alt="" />
+      </div>
+
+      <div className="flex flex-col justify-center lg:mr-20 mt-32 lg:mt-0 ">
+      <div className="greet text-white">
         <h1>HI THERE!</h1>
       </div>
-      <div className="lg:pl-[31rem]">
-        <h1 className='text-4xl py-3 '>I'M <span className='text-[#daa320]'>WEB DEVELOPER</span></h1>
-        <p className=' max-w-xl leading-loose pt-2'>
+        <h1 className='text-4xl py-3 text-white'>I'M <span className='text-[#daa320]'>WEB DEVELOPER</span></h1>
+        <p className=' max-w-xl leading-loose pt-2 text-white'>
          I'm a Freelance UI/UX Designer and Developer based in Kigali, Rwanda.
          I strives to build immersive and beautiful web applications 
          through carefully crafted code and user-centric design.
         </p>
-        <div className="flex flex-row mt-8">
+        <div className="flex flex-col lg:flex-row mt-8 space-y-4 lg:space-y-0 mx-auto lg:mx-0">
           <div>
-          <Link to='/About' className='btn mr-10 rounded-full bg-[#daa520] px-10' ><i class="fa-solid fa-user text-white -translate-x-3"/>MORE ABOUT ME</Link>
+          <Link to='/About' className='btn lg:mr-10 rounded-full bg-[#daa520] px-6 lg:px-10' ><i class="fa-solid fa-user text-white -translate-x-3"/>MORE ABOUT ME</Link>
           </div>
           <div>
-            <Link to='/Portfolio' className='btn rounded-full bg-[#262e33] px-10 text-[#da9228] font-normal border-[#da9228]'><i class="fa-solid fa-briefcase text-[#daa320] -translate-x-3"></i>PORTFOLIO</Link>
+            <Link to='/Portfolio' className='btn rounded-full bg-[#262e33] px-10 lg:px-10 text-[#da9228] font-normal border-[#da9228]'><i class="fa-solid fa-briefcase text-[#daa320] -translate-x-3"></i>PORTFOLIO</Link>
           </div>
           
         </div>
       </div>
       
     </div>
-   </div>
+   </section>
     </>
   )
 }
