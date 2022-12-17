@@ -46,7 +46,7 @@ code {
 }
 .line  {
   border-left: 4px solid #daa320;
-  height: 35rem;
+  height: 30rem;
   position: absolute;
   left: 50%;
   transform: translateX(-8rem) translateY(16.3rem);

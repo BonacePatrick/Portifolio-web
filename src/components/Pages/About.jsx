@@ -7,7 +7,7 @@ const About = () => {
     <Navbar/>
     <section className='about'>
       <div className='text-center'>
-        <h1 className='text-6xl font-extrabold text-[#555555]'>ABOUT <span className='text-[#daa320]'>ME</span></h1>
+        <h1 className='text-4xl lg:text-6xl font-extrabold text-[#555555]'>ABOUT <span className='text-[#daa320]'>ME</span></h1>
         <h3 className='title-about my-8 font-normal text-[#9e9e9e] text-sm '>I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO</h3>
       </div>
       <div className="flex flex-col lg:flex-row items-center justify-around lg:mt-20 space-y-10 lg:space-y-0 ">
@@ -101,7 +101,7 @@ const About = () => {
           </div>
         </li>
       </ul>
-      <hr className="my-8 h-px bg-gray-400 border  w-1/3 md:w-1/2 dark:bg-gray-400 mx-auto"/>
+      <hr className="my-8 h-px bg-gray-400 border  w-1/3 md:w-1/2 dark:bg-gray-400 mx-auto block lg:hidden"/>
 <ul className="max-w-md  ">
   <li className="pb-3 sm:pb-4">
     <div className="flex items-center space-x-4">
@@ -187,7 +187,7 @@ const About = () => {
   </li>
 </ul>
       </div>
-      <div className="text-center lg:ml-56 lg:-translate-y-20 mt-5">
+      <div className="text-center lg:ml-56 lg:-translate-y-20 mt-5 lg:mt-10">
        <Link to='/About' className='btn mr-10 rounded-full bg-[#daa520] px-10 border-none' ><i class="fa-solid fa-download text-white -translate-x-3"></i>DOWNLOAD MY CV</Link>
       </div>
     </section>
