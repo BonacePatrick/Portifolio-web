@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Typed from 'react-typed'
 
 const NavHero = () => {
   return (
@@ -31,7 +32,19 @@ const NavHero = () => {
       <div className="greet text-white">
         <h1>HI THERE!</h1>
       </div>
-        <h1 className='text-4xl py-3 text-white'>I'M <span className='text-[#daa320]'>WEB DEVELOPER</span></h1>
+        <h1 className='text-4xl py-3 text-white'>I'M <span className='text-[#daa320]'>
+          <Typed
+          strings={[
+            "Web developer",
+            "Software developer",
+            "UI&UX Designer",
+          ]}
+          typeSpeed={150}
+          backSpeed={150}
+          loop
+          />
+          </span>
+      </h1>
         <p className=' max-w-xl leading-loose pt-2 text-white'>
          I'm a Freelance UI/UX Designer and Developer based in Kigali, Rwanda.
          I strives to build immersive and beautiful web applications 
