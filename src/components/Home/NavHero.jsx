@@ -32,7 +32,7 @@ const NavHero = () => {
       <div className="greet text-white">
         <h1>HI THERE!</h1>
       </div>
-        <h1 className='text-4xl py-3 text-white'>I'M <span className='text-[#daa320]'>
+        <h1 className='text-3xl lg:text-4xl py-3 text-white'>I'M <span className='text-[#daa320]'>
           <Typed
           strings={[
             "Web developer",
