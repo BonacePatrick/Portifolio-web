@@ -1,7 +1,11 @@
 import React from 'react'
 import Navbar from '../Home/Navbar'
+import {useForm} from 'react-hook-form'
 
 const Contact = () => {
+
+  const {register, formState:{errors}, handleSubmit,} = useForm();
+  const onSubmit = (data) => console.log(data)
   return (
     <>
     <Navbar/>
@@ -50,7 +54,7 @@ const Contact = () => {
        please fill out the form below and I will reply you shortly.
       </p>
 
-      <form>
+      <form onSubmit={handleSubmit(onSubmit)}>
        <div className="flex flex-col lg:flex-row lg:mt-5">
 
        <div className="form-group mb-6 lg:mr-5 relative">
@@ -68,7 +72,12 @@ const Contact = () => {
         transition
         ease-in-out
         m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7" placeholder= "YOUR NAME" />
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7" placeholder= "YOUR NAME" 
+        {...register("name",{required:true})}
+        />
+        <error>
+          {errors.name?.type === "required" && "Name is required"}
+        </error>
         </div>
 
          <div className="form-group mb-6 relative">
@@ -86,7 +95,13 @@ const Contact = () => {
         transition
         ease-in-out
         m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7" placeholder="YOUR EMAIL" />
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7" placeholder="YOUR EMAIL" 
+        {...register("email",{required:true, pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/i})}
+        />
+        <error>
+          {errors.email?.type === "required" && "Email is required"}
+          {errors.email?.type === "pattern" && "Entered email is in wrong format"}
+        </error>
         </div>
 
        </div>
@@ -109,7 +124,12 @@ const Contact = () => {
         ease-in-out
         m-0
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-      " id="exampleFormControlTextarea13" rows={3} placeholder="YOUR MESSAGE" defaultValue={""} />
+      " id="exampleFormControlTextarea13" rows={3} placeholder="YOUR MESSAGE" defaultValue={""} 
+      {...register("message",{required:true})}
+      />
+      <error>
+          {errors.message?.type === "required" && "Message is required"}
+        </error>
         </div>
       <div className="mx-auto">
 
