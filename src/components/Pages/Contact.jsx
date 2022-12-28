@@ -75,7 +75,7 @@ const Contact = () => {
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7" placeholder= "YOUR NAME" 
         {...register("name",{required:true})}
         />
-        <error>
+        <error className='text-red-400'>
           {errors.name?.type === "required" && "Name is required"}
         </error>
         </div>
@@ -98,7 +98,7 @@ const Contact = () => {
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7" placeholder="YOUR EMAIL" 
         {...register("email",{required:true, pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/i})}
         />
-        <error>
+        <error className='text-red-400'>
           {errors.email?.type === "required" && "Email is required"}
           {errors.email?.type === "pattern" && "Entered email is in wrong format"}
         </error>
@@ -127,7 +127,7 @@ const Contact = () => {
       " id="exampleFormControlTextarea13" rows={3} placeholder="YOUR MESSAGE" defaultValue={""} 
       {...register("message",{required:true})}
       />
-      <error>
+      <error className='text-red-400'>
           {errors.message?.type === "required" && "Message is required"}
         </error>
         </div>
