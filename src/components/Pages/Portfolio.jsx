@@ -16,7 +16,9 @@ const Portfolio = () => {
           <img className='w-full' src="./assets/project-1.jpg" alt="first-project" />
           <div className="middle">
 
-          <label htmlFor="my-modal-1" className="text">Project one</label>
+          <label htmlFor="my-modal-1" className="bg-[#daa320] text-white text-[0.3rem] 
+          lg:text-[1rem] py-2 lg:py-[1rem] px-4 lg:px-[2rem]"
+          >Project one</label>
 
           </div>
         </div>
@@ -24,15 +26,19 @@ const Portfolio = () => {
           <img className='w-full' src="./assets/project-5.jpg" alt="first-project" />
           <div className="middle">
 
-          <label htmlFor="my-modal-2" className="text">Project two</label>
+          <label htmlFor="my-modal-2" className="bg-[#daa320] text-white text-[0.3rem] 
+          lg:text-[1rem] py-2 lg:py-[1rem] px-4 lg:px-[2rem]">
+            Project two</label>
 
           </div>
         </div>
         <div className='bg-[#e6e7e1] w-2/5 lg:w-1/4 project-three hover:scale-105'>
           <img className='w-full' src="./assets/project-6.jpg" alt="first-project" />
-          <div className="middle">
+          <div className="middle ">
 
-          <label htmlFor="my-modal-3" className="text">Project three</label>
+          <label htmlFor="my-modal-3" className="bg-[#daa320] text-white text-[0.3rem]
+           lg:text-[1rem] py-2 lg:py-[1rem] px-4 lg:px-[2rem]">
+            Project three</label>
 
           </div>
         </div>
@@ -40,7 +46,9 @@ const Portfolio = () => {
           <img className='w-full' src="./assets/project-7.jpg" alt="first-project" />
           <div className="middle">
 
-          <label htmlFor="my-modal-4" className="text">Project four</label>
+          <label htmlFor="my-modal-4" className="bg-[#daa320] text-white text-[0.3rem] 
+          lg:text-[1rem] py-2 lg:py-[1rem] px-4 lg:px-[2rem]">
+            Project four</label>
 
           </div>
         </div>
@@ -48,7 +56,9 @@ const Portfolio = () => {
           <img className='w-full' src="./assets/project-8.jpg" alt="first-project" />
           <div className="middle">
 
-          <label htmlFor="my-modal-5" className="text">Project five</label>
+          <label htmlFor="my-modal-5" className="bg-[#daa320] text-white text-[0.3rem] 
+          lg:text-[1rem] py-2 lg:py-[1rem] px-4 lg:px-[2rem]">
+            Project five</label>
             
           </div>
         </div>
@@ -56,7 +66,9 @@ const Portfolio = () => {
           <img className='w-full' src="./assets/project-1.jpg" alt="first-project" />
           <div className="middle">
 
-          <label htmlFor="my-modal-6" className="text">Project six</label>
+          <label htmlFor="my-modal-6" className="bg-[#daa320] text-white text-[0.3rem] 
+          lg:text-[1rem] py-2 lg:py-[1rem] px-4 lg:px-[2rem]">
+            Project six</label>
 
           </div>
         </div>
