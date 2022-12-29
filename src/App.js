@@ -3,6 +3,8 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import Post1 from "./components/BlogPost/Post1";
+import Post2 from "./components/BlogPost/Post2";
 import Contents from "./components/Home/Contents";
 import About from "./components/Pages/About";
 import Blog from "./components/Pages/Blog";
@@ -35,6 +37,17 @@ function App() {
           <Route path="/Blog">
             <Blog/>
           </Route>
+
+          {/* ---post---- */}
+
+          <Route path="/Post1">
+            <Post1/>
+          </Route>
+
+          <Route path="/Post2">
+            <Post2/>
+          </Route>
+
           
         </Switch> 
      
