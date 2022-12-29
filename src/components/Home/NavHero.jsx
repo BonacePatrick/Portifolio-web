@@ -50,7 +50,7 @@ const NavHero = () => {
          I strives to build immersive and beautiful web applications 
          through carefully crafted code and user-centric design.
         </p>
-        <div className="flex flex-col lg:flex-row mt-16 lg:mt-8 space-y-6 lg:space-y-0 mx-auto lg:mx-0">
+        <div className="flex flex-col lg:flex-row mt-8 lg:mt-8 space-y-6 lg:space-y-0 mx-auto lg:mx-0">
           <div>
           <Link to='/About' className='btn lg:mr-10 rounded-full bg-[#daa520] px-6 lg:px-10' ><i className="fa-solid fa-user text-white -translate-x-3"/>MORE ABOUT ME</Link>
           </div>
