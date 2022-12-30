@@ -1,24 +1,10 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React from 'react';
 import Navbar from '../Home/Navbar'
 import {useForm} from 'react-hook-form'
 
 const Contact = () => {
 
-  // ---for emails--
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_v02b6an', 'template_5z7jnyl', form.current, 'GQ1vuCPMEk6ljj5PV')
-      .then((result) => {
-          console.log(result.text);
-
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
+  
 
   const {register, formState:{errors}, handleSubmit} = useForm();
   const onSubmit = (data) => console.log(data)
@@ -70,7 +56,7 @@ const Contact = () => {
        please fill out the form below and I will reply you shortly.
       </p>
 
-      <form  ref={form} onSubmit={handleSubmit(onSubmit)(sendEmail)}>
+      <form  onSubmit={handleSubmit(onSubmit)}>
        <div className="flex flex-col lg:flex-row lg:mt-5">
 
        <div className="form-group mb-6 lg:mr-5 relative">
