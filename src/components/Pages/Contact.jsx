@@ -56,7 +56,7 @@ const Contact = () => {
        please fill out the form below and I will reply you shortly.
       </p>
 
-      <form  onSubmit={handleSubmit(onSubmit)}>
+      <form  onSubmit={handleSubmit(onSubmit)} >
        <div className="flex flex-col lg:flex-row lg:mt-5">
 
        <div className="form-group mb-6 lg:mr-5 relative">
