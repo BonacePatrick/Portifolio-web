@@ -99,7 +99,7 @@ const Contact = () => {
         m-0
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7" placeholder="YOUR EMAIL" 
         {...register("email",{required:true, pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/i})}
-        name='user_email'
+        
         />
         <error className='text-red-400'>
           {errors.email?.type === "required" && "Email is required"}
