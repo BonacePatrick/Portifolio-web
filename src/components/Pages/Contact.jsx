@@ -1,10 +1,26 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import Navbar from '../Home/Navbar'
 import {useForm} from 'react-hook-form'
 
 const Contact = () => {
 
-  const {register, formState:{errors}, handleSubmit,} = useForm();
+  // ---for emails--
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_v02b6an', 'template_5z7jnyl', form.current, 'GQ1vuCPMEk6ljj5PV')
+      .then((result) => {
+          console.log(result.text);
+
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+  const {register, formState:{errors}, handleSubmit} = useForm();
   const onSubmit = (data) => console.log(data)
   return (
     <>
@@ -54,7 +70,7 @@ const Contact = () => {
        please fill out the form below and I will reply you shortly.
       </p>
 
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form  ref={form} onSubmit={handleSubmit(onSubmit)(sendEmail)}>
        <div className="flex flex-col lg:flex-row lg:mt-5">
 
        <div className="form-group mb-6 lg:mr-5 relative">
@@ -73,7 +89,7 @@ const Contact = () => {
         ease-in-out
         m-0
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7" placeholder= "YOUR NAME" 
-        {...register("name",{required:true})}
+        {...register("name",{required:true})} name='user_name'
         />
         <error className='text-red-400'>
           {errors.name?.type === "required" && "Name is required"}
@@ -97,6 +113,7 @@ const Contact = () => {
         m-0
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7" placeholder="YOUR EMAIL" 
         {...register("email",{required:true, pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/i})}
+        name='user_email'
         />
         <error className='text-red-400'>
           {errors.email?.type === "required" && "Email is required"}
@@ -126,6 +143,7 @@ const Contact = () => {
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
       " id="exampleFormControlTextarea13" rows={3} placeholder="YOUR MESSAGE" defaultValue={""} 
       {...register("message",{required:true})}
+      name='message'
       />
       <error className='text-red-400'>
           {errors.message?.type === "required" && "Message is required"}
