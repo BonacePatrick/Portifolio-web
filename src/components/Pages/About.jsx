@@ -151,8 +151,8 @@ const About = () => {
         </p>
        
       </div>
-      <div className="inline-flex items-center text-base font-semibold text-[#555555] dark:text-white px-6 lg:translate-x-8">
-      bonace@gmail.com
+      <div className="inline-flex items-center text-base font-semibold text-[#555555] dark:text-white px-2 lg:translate-x-8">
+      developerbonace@gmail.com
       </div>
     </div>
   </li>
@@ -166,7 +166,7 @@ const About = () => {
         
       </div>
       <div className="inline-flex items-center text-base font-semibold text-[#555555] dark:text-white">
-        bonace.it
+        bonace.patrick
       </div>
     </div>
   </li>

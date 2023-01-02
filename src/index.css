@@ -40,16 +40,16 @@ code {
     display: inline-block;
     content: "";
     border-top: .3rem solid #daa320;
-    width: 2rem;
+    width: 2.4rem;
     margin: 0 1rem;
     transform: translateX(27rem) translateY(-31.8rem);
 }
 .line  {
   border-left: 4px solid #daa320;
-  height: 30rem;
+  height: 32rem;
   position: absolute;
   left: 50%;
-  transform: translateX(-8rem) translateY(16.3rem);
+  transform: translateX(-8rem) translateY(16rem);
   top: 0;
 }
 

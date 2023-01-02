@@ -22,13 +22,13 @@ const NavHero = () => {
         </div>
    </div>
    <section className="navbar-hero bg-[#162124] min-h-screen ">
-    <div className=" flex  justify-between items-center">
+    <div className=" flex flex-col lg:flex-row justify-between items-center">
      
-      <div className='w-2/5 hidden lg:block'>
-        <img className='w-full' src="./assets/profile.png" alt="" />
+      <div className='w-2/3 rounded-full first-letter:  lg:rounded-none flex flex-col lg:flex-row lg:w-2/5'>
+        <img className='w-full border border-[#daa320] rounded-full lg:border-none lg:rounded-none' src="./assets/profile.png" alt="" />
       </div>
 
-      <div className="flex flex-col justify-center lg:mr-20 mt-32 lg:mt-0 ml-5 lg:ml-0 ">
+      <div className="flex flex-col justify-center lg:mr-20  lg:mt-0 ml-5 lg:ml-0 ">
       <div className="greet text-white">
         <h1>HI THERE!</h1>
       </div>

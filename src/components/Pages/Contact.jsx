@@ -7,17 +7,19 @@ const Contact = () => {
 
     const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+   
 
-    emailjs.sendForm('smart_service', 'smart_template', form.current, 'GQ1vuCPMEk6ljj5PV')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      form.current.reset()
-  };
+    const sendEmail = (e) => {
+      e.preventDefault();
+
+      emailjs.sendForm('smart_service', 'smart_template', form.current, 'GQ1vuCPMEk6ljj5PV')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        form.current.reset()
+    };
 
 
   const {register, formState:{errors}, handleSubmit} = useForm();
@@ -91,10 +93,10 @@ const Contact = () => {
         ease-in-out
         m-0
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7" placeholder= "YOUR NAME" 
-        {...register("name",{required:true})} name="from_name"
+        {...register("from_name",{required:true})} name="from_name"
         />
         <error className='text-red-400'>
-          {errors.name?.type === "required" && "Name is required"}
+          {errors.from_name?.type === "required" && "Name is required"}
         </error>
         </div>
 
