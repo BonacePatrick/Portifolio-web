@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Navbar from '../Home/Navbar'
 
 const Portfolio = () => {
@@ -33,7 +32,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div className='bg-[#e6e7e1] w-2/5 lg:w-1/4 project-three hover:scale-105'>
-          <img className='w-full' src="./assets/taskList.png" alt="first-project" />
+          <img className='w-full' src="./assets/Todo-list.png" alt="first-project" />
           <div className="middle ">
 
           <label htmlFor="my-modal-3" className="bg-[#daa320] text-white text-[0.3rem]
@@ -43,7 +42,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div className='bg-[#e6e7e1] w-2/5 lg:w-1/4 project-four hover:scale-105'>
-          <img className='w-full' src="./assets/Basic calculator.png" alt="first-project" />
+          <img className='w-2/5 lg:1/2 mx-auto' src="./assets/Basic calculator.png" alt="first-project" />
           <div className="middle">
 
           <label htmlFor="my-modal-4" className="bg-[#daa320] text-white text-[0.3rem] 
@@ -53,7 +52,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div className='bg-[#e6e7e1] w-2/5 lg:w-1/4 project-five hover:scale-105'>
-          <img className='w-full' src="./assets/blog-post-1.jpg" alt="first-project" />
+          <img className='w-full' src="./assets/Book-list-app.png" alt="first-project" />
           <div className="middle">
 
           <label htmlFor="my-modal-5" className="bg-[#daa320] text-white text-[0.3rem] 
@@ -63,7 +62,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div className='bg-[#e6e7e1] w-2/5 lg:w-1/4 project-six hover:scale-105'>
-          <img className='w-full' src="./assets/project-2.jpg" alt="first-project" />
+          <img className='w-5/12 mx-auto' src="./assets/Form-validator.png" alt="first-project" />
           <div className="middle">
 
           <label htmlFor="my-modal-6" className="bg-[#daa320] text-white text-[0.3rem] 
@@ -137,7 +136,7 @@ const Portfolio = () => {
     
 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 mx-auto">
     <a href='https://task-list-app-eight.vercel.app/'>
-        <img class="rounded-t-lg" src="./assets/taskList.png" alt="project-one" />
+        <img class="rounded-t-lg" src="./assets/Todo-list.png" alt="project-three" />
     </a>
     <div class="p-5">
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -163,7 +162,7 @@ const Portfolio = () => {
     
 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 mx-auto">
     <a href='https://basic-calculator-six.vercel.app/'>
-        <img class="rounded-t-lg" src="./assets/Basic calculator.png" alt="project-one" />
+        <img class="rounded-t-lg w-2/5 lg:w-1/2 mx-auto" src="./assets/Basic calculator.png" alt="project-four" />
     </a>
     <div class="p-5">
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -189,17 +188,17 @@ const Portfolio = () => {
   <div className="modal-box">
     
 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 mx-auto">
-    <Link to="">
-        <img class="rounded-t-lg" src="./assets/project-1.jpg" alt="project-one" />
-    </Link>
+    <a href='https://book-list-app-y.vercel.app/'>
+        <img class="rounded-t-lg" src="./assets/Book-list-app.png" alt="project-five" />
+    </a>
     <div class="p-5">
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          This is web app project intend to connect musicians around the world to collaborate each others.
+          This is app intend to help javascript beginner to learn OOP
         </p>
-        <Link to="" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#daa320] rounded-lg hover:bg-[#daa220d3] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <a href='https://book-list-app-y.vercel.app/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#daa320] rounded-lg hover:bg-[#daa220d3] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Get look
             <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-        </Link>
+        </a>
     </div>
 </div>
 
@@ -216,17 +215,17 @@ const Portfolio = () => {
   <div className="modal-box">
     
 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 mx-auto">
-    <Link to="">
-        <img class="rounded-t-lg" src="./assets/project-2.jpg" alt="project-one" />
-    </Link>
+    <a href='https://form-validates.vercel.app/'>
+        <img class="rounded-t-lg w-5/12 mx-auto" src="./assets/Form-validator.png" alt="project-one" />
+    </a>
     <div class="p-5">
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          This is web app project intend to connect musicians around the world to collaborate each others.
+          This is basic form validator app intend to help in validations
         </p>
-        <Link to="" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#daa320] rounded-lg hover:bg-[#daa220d3] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <a href='https://form-validates.vercel.app/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#daa320] rounded-lg hover:bg-[#daa220d3] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Get look
             <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-        </Link>
+        </a>
     </div>
 </div>
 
