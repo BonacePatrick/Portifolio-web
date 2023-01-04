@@ -13,7 +13,7 @@ const Portfolio = () => {
    </div>
       <div className="flex flex-wrap items-center gap-5 justify-center">
         <div className='bg-[#e6e7e1] w-2/5 lg:w-1/4 cursor-pointer project-one hover:scale-105'>
-          <img className='w-full' src="./assets/project-1.jpg" alt="first-project" />
+          <img className='w-full' src="./assets/shortly-web.png" alt="first-project" />
           <div className="middle">
 
           <label htmlFor="my-modal-1" className="bg-[#daa320] text-white text-[0.3rem] 
@@ -82,12 +82,12 @@ const Portfolio = () => {
   <div className="modal-box">
     
 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 mx-auto">
-    <a href="https://musixy.netlify.app/">
-        <img class="rounded-t-lg" src="./assets/project-1.jpg" alt="project-one" />
+    <a href="shortly-jq402z8cp-bonacepatrick.vercel.app">
+        <img class="rounded-t-lg" src="./assets/shortly-web.png" alt="project-one" />
     </a>
     <div class="p-5">
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          This is web app intend to connect musicians around the world
+          This is web app intend to create shorty links of any urls
         </p>
         <a href="https://musixy.netlify.app/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#daa320] rounded-lg hover:bg-[#daa220d3] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Get look
