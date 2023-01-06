@@ -188,7 +188,7 @@ const About = () => {
 </ul>
       </div>
       <div className="text-center lg:ml-56 lg:-translate-y-20 mt-5 lg:mt-10">
-       <a href={Cv} download='Cv-Bonace Patrick' className='btn mr-10 rounded-full bg-[#daa520] px-10 border-none' ><i className="fa-solid fa-download text-white -translate-x-3"></i>DOWNLOAD MY CV</a>
+       <a href={Cv} download='Cv-BonacePatrick' className='btn mr-10 rounded-full bg-[#daa520] px-10 border-none' ><i className="fa-solid fa-download text-white -translate-x-3"></i>DOWNLOAD MY CV</a>
       </div>
     </section>
     </>
