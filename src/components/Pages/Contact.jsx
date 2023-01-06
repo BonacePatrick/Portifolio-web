@@ -7,8 +7,7 @@ const Contact = () => {
 
     const form = useRef();
 
-   
-
+    
     const sendEmail = (e) => {
       e.preventDefault();
 
@@ -24,6 +23,7 @@ const Contact = () => {
 
   const {register, formState:{errors}, handleSubmit} = useForm();
   const onSubmit = (data) => console.log(data)
+  
   return (
     <>
     <Navbar/>
