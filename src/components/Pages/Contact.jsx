@@ -29,7 +29,7 @@ const Contact = () => {
     <Navbar/>
     <section>
       <div className='text-center'>
-          <h1 className='text-4xl lg:text-6xl font-extrabold text-[#555555]'>GET <span className='text-[#daa320]'>IN TOUCH</span></h1>
+          <h1 className='text-4xl lg:text-6xl font-extrabold text-[#555555]'>GET <span className='text-[#2196F3]'>IN TOUCH</span></h1>
           <h3 className='title-about my-8 font-normal text-[#9e9e9e] text-sm '>I’M ALWAYS OPEN TO DISCUSSING PRODUCT DESIGN WORK OR PARTNERSHIPS.</h3>
      </div>
      
@@ -42,24 +42,24 @@ const Contact = () => {
     <div className="grow-0 shrink-0 basis-auto mb-6 md:mb-0 w-full md:w-6/12 px-3 lg:px-6">
       
       <p className="text-gray-500 mb-2">Phone</p>
-      <p className="text-gray-500 mb-2"><i className="fa-brands fa-whatsapp text-[#daa520] mr-3"></i>+ 250789456385</p>
+      <p className="text-gray-500 mb-2"><i className="fa-brands fa-whatsapp text-[#2196F3] mr-3"></i>+ 250789456385</p>
 
       <p className="text-gray-500 mb-2">Email</p>
-      <p className="text-gray-500 mb-2"><i className="fa-regular fa-envelope text-[#daa520] mr-3"></i>patrickruboneza@gmail.com</p>
+      <p className="text-gray-500 mb-2"><i className="fa-regular fa-envelope text-[#2196F3] mr-3"></i>patrickruboneza@gmail.com</p>
 
       <p className="text-gray-500 mb-2">Instagram</p>
-      <p className="text-gray-500 mb-2"><i className="fa-brands fa-instagram text-[#daa520] mr-3"></i> bonace.it</p>
+      <p className="text-gray-500 mb-2"><i className="fa-brands fa-instagram text-[#2196F3] mr-3"></i> bonace.patrick</p>
 
       <p className="text-gray-500 mb-2">Linkedin</p>
-      <p className="text-gray-500 mb-2"><i className="fa-brands fa-linkedin-in text-[#daa520] mr-3"></i>bonace-patrick</p>
+      <p className="text-gray-500 mb-2"><i className="fa-brands fa-linkedin-in text-[#2196F3] mr-3"></i>bonace-patrick</p>
 
 
       <p className="text-gray-500 mt-10">Social profiles</p>
       <div className="flex">
-      <i className="fa-brands fa-facebook text-[#daa520] text-2xl mt-3 mr-3"></i>
-      <i className="fa-brands fa-twitter text-[#daa520] text-2xl mt-3 mr-3"></i>
-      <i className="fa-brands fa-instagram text-[#daa520] text-2xl mt-3 mr-3"></i>
-      <i className="fa-brands fa-linkedin-in text-[#daa520] text-2xl mt-3"></i>
+      <i className="fa-brands fa-facebook text-[#2196F3] text-2xl mt-3 mr-3"></i>
+      <i className="fa-brands fa-twitter text-[#2196F3] text-2xl mt-3 mr-3"></i>
+      <i className="fa-brands fa-instagram text-[#2196F3] text-2xl mt-3 mr-3"></i>
+      <i className="fa-brands fa-linkedin-in text-[#2196F3] text-2xl mt-3"></i>
       </div>
      
    
@@ -160,7 +160,7 @@ const Contact = () => {
       border-none
       px-9
       py-4
-      bg-[#daa520]
+      bg-[#2196F3]
       text-white
       font-medium
       text-xs
@@ -168,9 +168,9 @@ const Contact = () => {
       uppercase
       rounded-full
       shadow-md
-      hover:bg-[#daa520]hover:shadow-lg
-      focus:bg-[#daa520] focus:shadow-lg focus:outline-none focus:ring-0
-      active:bg-[#daa520] active:shadow-lg
+      hover:bg-[#2196F3]hover:shadow-lg
+      focus:bg-[#2196F3] focus:shadow-lg focus:outline-none focus:ring-0
+      active:bg-[#2196F3] active:shadow-lg
       transition
       duration-150
       ease-in-out"><i className="fa-solid fa-paper-plane text-lg mr-3"></i> SEND MESSAGE</button>

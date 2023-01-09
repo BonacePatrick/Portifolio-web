@@ -32,21 +32,21 @@ code {
 .title-about::after {
     display: inline-block;
     content: "";
-    border-top: .2rem solid #daa320;
+    border-top: .2rem solid #2196F3;
     width: 2rem;
     margin: 0 1rem;
 }
 .line-2::before {
     display: inline-block;
     content: "";
-    border-top: .3rem solid #daa320;
+    border-top: .3rem solid #2196F3;
     width: 2.4rem;
     margin: 0 1rem;
-    transform: translateX(27rem) translateY(-31.8rem);
+    transform: translateX(27rem) translateY(-33.7rem);
 }
 .line  {
-  border-left: 4px solid #daa320;
-  height: 32rem;
+  border-left: 4px solid #2196F3;
+  height: 34rem;
   position: absolute;
   left: 50%;
   transform: translateX(-8rem) translateY(16rem);
@@ -163,5 +163,13 @@ code {
   opacity: 1;
 }
 
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .8;
+  }
+}
 
 
