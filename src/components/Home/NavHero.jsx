@@ -51,10 +51,10 @@ const NavHero = () => {
         </p>
         <div className="flex flex-col lg:flex-row mt-8 lg:mt-8 space-y-6 lg:space-y-0 mx-auto lg:mx-0">
           <div>
-          <Link to='/About' className='btn lg:mr-10 rounded-full bg-[#2196F3] px-6 lg:px-10 border-none' ><i className="fa-solid fa-user text-slate-50 -translate-x-3"/>MORE ABOUT ME</Link>
+          <Link to='/About' className='btn lg:mr-10 rounded-full bg-[#2196F3] hover:bg-[#2195f3c5] px-6 lg:px-10 border-none' ><i className="fa-solid fa-user text-slate-50 -translate-x-3"/>MORE ABOUT ME</Link>
           </div>
-          <div>
-            <Link to='/Portfolio' className='btn rounded-full bg-slate-50 px-10 lg:px-10 text-[#2196F3] font-normal border-[#2196F3]'><i className="fa-solid fa-briefcase text-[#2196F3] -translate-x-3"></i>PORTFOLIO</Link>
+          <div className=''>
+            <Link to='/Portfolio' className='btn rounded-full bg-slate-50 px-10 lg:px-10 text-[#2196F3] hover:bg-[#2195f3c5]  hover:text-white font-normal border-[#2196F3] hover:border-[#2196F3]'><i className="fa-solid fa-briefcase text-[#2196F3] hover:text-white -translate-x-3"></i>PORTFOLIO</Link>
           </div>
           
         </div>
